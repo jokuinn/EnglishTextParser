@@ -16,10 +16,11 @@ public class Main {
 
         //logic
         Calculator calculator = new Calculator();
-        text = calculator.removeArticles(text);
+        
         text = calculator.removeC(text);
         text = calculator.removeDoubleLetter(text);
         text = calculator.removeE(text);
+        text = calculator.removeArticles(text);
         //print
         ResultPrinter resultPrinter = new ConsoleResultPrinter();
         resultPrinter.print(text);
